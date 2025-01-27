@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #dedede;
+        font-family: "Quicksand", serif;
+      }
+      .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 200px 150px;
+        height: 395px;
+        width: 290px;
+        border-radius: 15px;
+        background-color: #f9f9f9;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.163);
+      }
+      .best {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        padding: 6px;
+        background-color: #c81212;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 15px 0 0 0;
+      }
+      .img {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(164, 164, 164, 0.441);
+        border-radius: 15px 15px 0px 0px;
+      }
+      .img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .img:hover img {
+        transition: all 0.03s ease-in-out;
+        transform: scale(1.1);
+      }
+      .card h2 {
+        padding-top: 18px;
+        text-align: center;
+      }
+      .price-color {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+      }
+      .price h2 {
+        display: inline;
+      }
+      .m-color {
+        font-family: "Quicksand", serif;
+        text-align: center;
+        font-size: 20px;
+      }
+      .c-color {
+        height: 20px;
+        width: 20px;
+        background: #000;
+        border-radius: 50%;
+        margin: 5px;
+      }
+      .color {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        padding-top: 5px;
+        cursor: pointer;
+      }
+      .c-color1 {
+        background-color: #c81212;
+      }
+      .c-color2 {
+        background-color: rgb(0, 0, 0);
+      }
+      .c-color3 {
+        background-color: rgb(255, 191, 53);
+      }
+      .c-color4 {
+        background-color: rgb(255, 137, 73);
+      }
+      .c-color1:hover {
+        transition: all 0.03s ease-in-out;
+        transform: scale(1.1);
+      }
+      .c-color2:hover {
+        transition: all 0.03s ease-in-out;
+        transform: scale(1.1);
+      }
+      .c-color3:hover {
+        transition: all 0.03s ease-in-out;
+        transform: scale(1.1);
+      }
+      .c-color4:hover {
+        transition: all 0.03s ease-in-out;
+        transform: scale(1.2);
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding-top: 20px;
+      }
+      .bt{
+        font-family: "Quicksand", serif;
+        height: 30px;
+        width: 38%;
+        border: none;
+        background-color: #c81212;
+        border-radius: 7px;
+        color: #ffffff;
+      }
+      .bt:hover{
+        transition: all 0.03s ease-in-out;
+        transform: scale(1.1);
+        background-color: #000;
+        box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.338);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="best">Bestseller</div>
+      <div class="img">
+        <img
+          src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/399665/04/sv01/fnd/IND/fmt/png/ST-Runner-v4-Suede-Unisex-Sneakers"
+          alt="Puma Shoes"
+        />
+      </div>
+      <h2>Puma Unisex Sneakers</h2>
+      <div class="price-color">
+        <div class="m-color">
+          Chosse Color
+          <div class="color">
+            <div class="c-color c-color1"></div>
+            <div class="c-color c-color2"></div>
+            <div class="c-color c-color3"></div>
+            <div class="c-color c-color4"></div>
+          </div>
+        </div>
+        <div class="price">
+          <h3 style="color: #808080 ; text-decoration: line-through;">$799</h3>
+          <h2 style="color: #c81212">$399</h2>
+        </div>
+      </div>
+      <div class="button">
+        <button class="bt"><b>Buy Now</b></button>
+        <button class="bt"><b>Add to Wishlist</b></button>
+      </div>
+    </div>
+  </body>
+</html>
